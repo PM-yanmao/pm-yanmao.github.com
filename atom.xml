@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://spn5rm.coding-pages.com/</id>
     <title>严毛的博客</title>
-    <updated>2020-03-05T10:48:43.324Z</updated>
+    <updated>2020-03-05T11:00:13.453Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://spn5rm.coding-pages.com/"/>
     <link rel="self" href="https://spn5rm.coding-pages.com/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://spn5rm.coding-pages.com/images/avatar.png</logo>
     <icon>https://spn5rm.coding-pages.com/favicon.ico</icon>
     <rights>All rights reserved 2020, 严毛的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[以后可以评论啦！]]></title>
+        <id>https://spn5rm.coding-pages.com/post/yi-hou-ke-yi-ping-lun-la/</id>
+        <link href="https://spn5rm.coding-pages.com/post/yi-hou-ke-yi-ping-lun-la/">
+        </link>
+        <updated>2020-03-05T10:56:04.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[严毛的第一个文章]]></title>
         <id>https://spn5rm.coding-pages.com/post/yan-mao-de-di-yi-ge-wen-zhang/</id>
