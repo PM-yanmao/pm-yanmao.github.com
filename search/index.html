@@ -1,9 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8"/>
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>严毛的第一个文章 | 严毛的博客</title>
+<title>严毛的博客</title>
 <link rel="shortcut icon" href="https://pm-yanmao.github.io/favicon.ico?v=1583458827552">
 <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="https://pm-yanmao.github.io/styles/main.css">
@@ -30,11 +32,20 @@
 
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/tangkaichuan/gridea-search/lib/fuse.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/tangkaichuan/gridea-search/lib/ejs.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/tangkaichuan/gridea-search/lib/gridea-search.min.js"></script>
+    <script src="/media/gridea-search/result-template.ejs" type="text/ejs"></script>
 </head>
+
 <body>
-<div class="main gt-bg-theme-color-first">
-    
+    <style>
+        .searched-keyword {
+            background-color: yellow;
+        }
+    </style>
+    <div class="main animated">
+        
 <nav class="navbar navbar-expand-lg">
     <div class="navbar-brand">
         <img class="user-avatar" src="/images/avatar.png" alt="头像">
@@ -87,69 +98,12 @@
         </div>
     </div>
 </nav>
-    <div class="post-container">
-        <div class="post-detail gt-bg-theme-color-second">
-            <article class="gt-post-content">
-                <h2 class="post-title">
-                    严毛的第一个文章
-                </h2>
-                <div class="post-info">
-                    <time class="post-time gt-c-content-color-first">
-                        · 2020-03-05 ·
-                    </time>
-                    
-                </div>
-                <div class="post-content">
-                    <p>hi，大家好， 我是严毛。<br>
-这几天呢，我一直在忙做一个网站，试了很多方案，最终的就是你看到的这个啦。<br>
-也算是圆了我的一个梦吧<br>
-但是还有些功能需要完善，比如说用户注册，发表留言等，我会尽快弄出来的，网站配置还要点时间，大家如果访问不了请不要怪我哦<br>
-（＞人＜；）<br>
-就到这了，感谢阅读，下次见。<br>
-n(<em>≧▽≦</em>)n</p>
-
-                </div>
-            </article>
+        <div id="gridea-search-result">
+            <p class="searching">搜索中......</p>
+            <p class="no-result" style="text-align: center">未搜索到相关文章</p>
         </div>
-
-        
-            <div class="next-post">
-                <div class="next gt-c-content-color-first">下一篇</div>
-                <a href="https://pm-yanmao.github.io/post/hello-gridea/" class="post-title gt-a-link">
-                    Hello Gridea
-                </a>
-            </div>
-        
-
-        
-            
-                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: '5bbfce65cef8fb5e0a0a',
-    clientSecret: 'f34b20decd1dbdb746c0c24ef05385b75bf09d4b',
-    repo: 'pm-yanmao.github.io',
-    owner: 'PM-yanmao',
-    admin: ['PM-yanmao'],
-    id: location.pathname,      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-            
-
-            
-        
-
-        <div class="site-footer gt-c-content-color-first">
+    </div>
+    <div class="site-footer gt-c-content-color-first">
     <div class="slogan gt-c-content-color-first">٩(๑òωó๑)۶做一个可爱的人n(*≧▽≦*)n</div>
     <div class="social-container">
         
@@ -177,8 +131,6 @@ n(<em>≧▽≦</em>)n</p>
     hljs.initHighlightingOnLoad()
 </script>
 
-
-    </div>
-</div>
 </body>
+
 </html>
